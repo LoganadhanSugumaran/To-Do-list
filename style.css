@@ -1,0 +1,184 @@
+body{
+    /* background-image: url(NY.jpg); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: double;
+    border-left-width: 10px;
+    border-left-color: grey;
+    color: purple;
+    font-family: "press Start 2P", "consolas", sans-serif;
+}
+
+
+
+.odd{
+    background-color: white;
+    color: black;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.even{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: wavy underline;
+}
+
+#p5{
+    border-style: double;
+    border-width: 5px;
+    border-color: gold;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+ /* .box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    font-size: 40px;
+    text-align: center;
+    background: tomato;
+
+    float: left; 
+ }
+
+ #box1{
+    border: 1px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background: greenyellow;
+    position: relative;
+    top: 150px;
+    left: 50px;
+
+    
+} */
+
+/* #box2{
+    border:1px solid;
+    width: 100px;
+    height: 100px;
+    font-size: 22px;
+    background: skyblue;
+}      */
+
+
+a:link{
+    color: green;
+}
+
+
+a:visited{
+    color: grey;
+}
+
+a:hover{
+    color: tomato;
+}
+
+a:active{
+    color: lawngreen;
+}
+
+button:hover{
+    background-color: lightgreen;
+}
+
+/* li:nth-child(5){
+    background-color: yellow;
+} */
+
+li:nth-child(odd){
+    background-color: skyblue;
+} 
+
+li:nth-child(even){
+    background-color: yellow;
+} 
+
+/* li:nth-child(3n){
+    background-color: yellow;
+}  */
+
+p::first-letter{
+    font-size: 40px;
+    font-style: italic;
+}
+
+p::first-line{
+    color: blue;
+}
+
+#List1 li::before{
+    content: "✔︎";
+}
+
+#CSS::after{
+    content: "⨋ ";
+}
+
+li::marker{
+    color:silver;
+}
+
+p::selection{
+    color: white;
+    background : black;
+}
+
+h1{
+    font-style: italic;
+    text-shadow: 0px 0px 5px yellow , 0px -5px 5px red;
+    box-shadow: 5px 5px 5px black;
+}
+
+h1:hover{
+    box-shadow: 5px 5px 5px black;
+}
+
+/* <i class="fa-solid fa-envelope"></i>
+
+<i class="fa-sharp fa-light fa-music"></i> */
+
+#box1{
+    width: 250px;
+    height: 250px;
+    background: red;
+    font-size: 225px;
+    text-align: center;
+    /*animation: mySlide;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-duration: 5s; */
+    /* animation: 3s linear 0s infinite running mySlide; */
+
+}
+/* #box1:hover{
+    animation: 3s linear 0s infinite running mySlide;
+} */
+/* #box1:active{
+    animation: 3s linear 0s infinite running mySlide;
+} */
+
+@keyframes mySlide {
+    from{margin-left: 100%};
+    to{margin-left: 0%};
+    
+}
+
+@keyframes myRotate {
+    100%{transform: rotateZ(360deg)};
+    
+}
